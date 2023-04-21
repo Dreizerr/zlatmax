@@ -1,2 +1,6 @@
-@import "_nullstyle";
-@import "_generals";
+@import "base/nullstyle";
+@import "base/generals";
+
+@import "components/header";
+
+@import "base/media";

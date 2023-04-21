@@ -1,0 +1,13 @@
+@import "base/mixins";
+@import "vars";
+body {
+  @include adaptive-value("font-size", 18, 16, $type);
+  font-weight: 500;
+  font-family: $generalFont;
+}
+
+[class*="__container"] {
+  max-width: 1630px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}

@@ -1,0 +1,48 @@
+.header-top {
+  font-size: 16px;
+  color: white;
+  background-color: var(--black);
+}
+
+.header-top__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+.header-top-menu__list {
+  display: flex;
+  align-items: center;
+  @include adaptive-value("gap", 60, 15, $type);
+}
+
+.header-top__link-hover {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    background-color: white;
+    width: 0px;
+    height: 2px;
+    display: block;
+    transition: ease-in-out 0.5s;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.cabinet {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cabinet__link {
+  font-size: 18px;
+}

@@ -1,0 +1,12 @@
+@import "_adaptiveValue";
+@import "_variables";
+@import "_templates";
+
+@import "_header";
+
+
+[class*="__container"] {
+  max-width: 1630px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}

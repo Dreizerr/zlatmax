@@ -1,10 +1,18 @@
 <header class="header">
   <div class="header-top">
     <div class="header-top__container">
+      <div class="header-menu-burger menu-burger">
+        <div class="header-menu-burger__line menu-burger__line"></div>
+      </div>
       <nav class="header-top-menu">
         <ul class="header-top-menu__list">
           <li class="header-top-menu__item">
             <a class="header-top-menu__link header-top__link-hover" href="">О нас</a>
+          </li>
+          <li class="header-top-menu__item desktop-hidden">
+            <button class="header-top-menu__link header-top__link-hover header-top-menu__link-catalog">
+              Каталог товаров
+            </button>
           </li>
           <li class="header-top-menu__item">
             <a class="header-top-menu__link header-top__link-hover" href="">Оплата и доставка</a>
@@ -15,16 +23,298 @@
           <li class="header-top-menu__item">
             <a class="header-top-menu__link header-top__link-hover" href="">Контакты</a>
           </li>
+          <li class="header-top-menu__item desktop-hidden">
+            <a class="header-top-menu__link header-top__link-hover" href="">Корзина</a>
+          </li>
+          <li class="header-top-menu__item desktop-hidden">
+            <a class="header-top-menu__link header-top__link-hover" href="">Понравившиеся товары</a>
+          </li>
         </ul>
       </nav>
       <div class="cabinet">
-        <a href=""><img class="cabinet-icon" src="@images/icons/human.svg" alt="" /></a>
+        <a href=""><img class="cabinet-icon" src="images/icons/human.svg" alt="" /></a>
         <a class="cabinet__link header-top__link-hover" href="">Личный кабинет</a>
       </div>
     </div>
   </div>
   <div class="header-center">
-    <div class="header-center__container"></div>
+    <div class="header-center__container">
+      <a data-da=".header-top__container,900,1" class="header__logo logo" href="">
+        <img src="images/icons/logo.svg" alt="" />
+      </a>
+      <form data-da=".header-top-menu,900,first" class="header-search">
+        <button class="header-search__submit" type="submit"></button>
+        <input autocomplete="off" class="header-search__input" type="text" placeholder="Поиск" />
+      </form>
+      <div class="header-actions">
+        <div class="header-actions__location">Москва</div>
+        <div class="header-actions__phone">
+          <div class="header-actions__phone-link">
+            <a class="header-actions__phone-numbers" href="tel:88007774967">8-800-777-49-67</a>
+            <a class="header-actions__phone-text" href="">Заказать звонок</a>
+          </div>
+          <img class="header-actions__spoiler-arrow" src="images/icons/arrow.svg" alt="" />
+        </div>
+        <div class="header-actions__likes">
+          <a href=""><img src="images/icons/heart.svg" alt="" /></a>
+        </div>
+        <div class="header-actions__cart cart">
+          <a data-cart-items="0" class="cart__link" href=""
+            ><img class="cart__icon" src="images/icons/cart.svg" alt=""
+          /></a>
+          <div class="cart__total">0 р.</div>
+          <a class="cart__order" href="">Оформить заказ</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="header-bottom"></div>
+  <div class="header-bottom">
+    <nav class="header-catalog menu-catalog">
+      <div class="header-bottom__container">
+        <ul data-da=".header-top-menu,900,last" class="menu-catalog__list">
+          <li class="menu-catalog__item desktop-hidden">
+            <button data-catalog-parent="1" class="menu-catalog__link back">Назад</button>
+          </li>
+          <li class="menu-catalog__item">
+            <button data-catalog-parent="1" class="menu-catalog__link">Каталог ножей</button>
+          </li>
+          <li class="menu-catalog__item">
+            <button data-catalog-parent="2" class="menu-catalog__link">Клинковое оружие</button>
+          </li>
+          <li class="menu-catalog__item">
+            <button data-catalog-parent="3" class="menu-catalog__link">Сувенирные изделия</button>
+          </li>
+          <li class="menu-catalog__item">
+            <button data-catalog-parent="4" class="menu-catalog__link">Фонари ARMYTEK</button>
+          </li>
+          <li class="menu-catalog__item">
+            <button data-catalog-parent="5" class="menu-catalog__link">Сопуствующие товары</button>
+          </li>
+        </ul>
+      </div>
+      <div data-da=".header-top-menu,900,last" class="sub-menu-catalog">
+        <div data-catalog-child="1" class="sub-menu-catalog__block">
+          <div class="sub-menu-catalog__container">
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Категория ножей</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Разделочные ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Туристические ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи охотничьи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Булатные ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из дамаска</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Тактического назначения</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Метательные ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Мачете и кукри</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи кухонные</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Производство ножей</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи АИР</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи ЗИК</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи ЗЗОСС</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи РОСоружие</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи Оружейник</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Булат Сергея Баранова</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Булат Андрея Умерова</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи Златко</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи Стиль-М</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Оружейная компания</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Ножи по маркам стали</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали 40х102С2М</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали 95х18</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали 100х13м</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали 110х18м-ШД</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали ЭИ-107 ТЦ</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали 50х14МФ</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали AUS-8</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали К340</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали M390</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из стали ЭП-766</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Заточка и полировка ножей</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Паста ГОИ</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Алмазная паста</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Бруски и камни для заточки</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Заточные системы</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Ножевая мастерская</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножевые клинки</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Заготовки для ножей</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Литье для ножей</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Материалы для рукоятей</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Уход за рукоятиями ножей</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <div data-catalog-child="2" class="sub-menu-catalog__block">
+          <div class="sub-menu-catalog__container">
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Категория ножей</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Разделочные ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Туристические ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи охотничьи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Булатные ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи из дамаска</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Тактического назначения</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Метательные ножи</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Мачете и кукри</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи кухонные</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+            <div class="sub-menu-catalog__item">
+              <a class="sub-menu-catalog__title" href="">Производство ножей</a>
+              <ul class="sub-menu-catalog__list">
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи АИР</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи ЗИК</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи ЗЗОСС</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи РОСоружие</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи Оружейник</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Булат Сергея Баранова</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Булат Андрея Умерова</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи Златко</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Ножи Стиль-М</a>
+                </li>
+                <li class="sub-menu-catalog__list-item">
+                  <a class="sub-menu-catalog__list-link" href="">Оружейная компания</a>
+                </li>
+              </ul>
+              <a class="sub-menu-catalog__all" href="">Смотреть все</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>

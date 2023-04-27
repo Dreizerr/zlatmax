@@ -1,0 +1,36 @@
+.menu-burger {
+  cursor: pointer;
+  display: none;
+
+  &::after,
+  &::before {
+    transition: ease 0.7s;
+    content: "";
+    width: 28px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+  }
+}
+
+.menu-burger--active {
+  .menu-burger__line {
+    opacity: 0;
+  }
+  &::before {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  &::after {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+}
+
+.menu-burger__line {
+  transition: ease 0.5s;
+  width: 28px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: white;
+}

@@ -7,4 +7,8 @@ $type: 1;
   --orange: #e8aa31;
   --grey: #ababab;
   --lightGrey: #ecf1f2;
+  --headerTopHeight: 70px;
+  --headerCenterHeight: 90px;
+  --headerBottomHeight: 70px;
+  --headerHeight: calc(var(--headerTopHeight) + var(--headerCenterHeight) + var(--headerBottomHeight));
 }

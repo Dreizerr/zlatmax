@@ -1,5 +1,6 @@
 @import "base/mixins";
 @import "vars";
+
 body {
   @include adaptive-value("font-size", 18, 16, $type);
   font-weight: 500;
@@ -8,6 +9,39 @@ body {
 
 [class*="__container"] {
   max-width: 1630px;
-  padding: 0px 30px;
+  padding: 0px 15px;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main {
+  margin-top: var(--headerHeight);
+}
+
+.scroll-lock {
+  overflow: hidden;
 }

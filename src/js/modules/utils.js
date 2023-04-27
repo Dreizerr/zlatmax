@@ -17,6 +17,11 @@ export function isWebp() {
   });
 }
 
-export function hell() {
-  console.log("hello");
+export function setActiveToggler(clickedElem, toToggleElem) {
+  clickedElem.onclick = () => toToggleElem.classList.toggle("active");
+}
+
+export function findParent(element, cls) {
+  while ((element = element.parentElement) && !element.classList.contains(cls));
+  return element;
 }

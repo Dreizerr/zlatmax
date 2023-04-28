@@ -1,0 +1,13 @@
+@media (max-width: 900px) {
+  .desktop-hidden {
+    display: block !important;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .main {
+    margin-top: var(--headerTopHeight);
+  }
+}

@@ -58,10 +58,6 @@
   }
 }
 
-.desktop-hidden {
-  display: none;
-}
-
 .cabinet {
   display: flex;
   align-items: center;
@@ -286,7 +282,6 @@
   position: absolute;
   top: calc(100% - 1px);
   left: 0;
-  z-index: 500;
   width: 100%;
 }
 
@@ -387,10 +382,6 @@
     display: block;
   }
 
-  .main {
-    margin-top: var(--headerTopHeight);
-  }
-
   .header-center,
   .header-bottom {
     display: none;
@@ -460,9 +451,26 @@
   }
 
   .header-top-menu__link {
+    min-height: 0;
+    width: 100%;
+    text-align: left;
     padding: 25px 10px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px #3d3d3d solid;
+    font-size: 16px;
+    &.back {
+      &::after {
+        content: "";
+        width: 10px;
+        height: 15px;
+        background: url(../images/icons/arrowWhite.svg) center no-repeat;
+        margin-right: 10px;
+        background-size: cover;
+        transform: rotate(180deg);
+      }
+    }
   }
 
   .header-top-menu__link-catalog {
@@ -513,14 +521,6 @@
   }
 
   .menu-catalog__link {
-    padding: 25px 10px;
-    display: flex;
-    min-height: 0;
-    font-size: 16px;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px #3d3d3d solid;
     &::after {
       position: static;
       box-shadow: none;
@@ -531,15 +531,54 @@
       margin-right: 10px;
       background-size: cover;
     }
-    &.back {
-      &::after {
-        transform: rotate(180deg);
-      }
-    }
   }
 
   .menu-catalog__link--active {
     color: white;
+  }
+
+  .sub-menu-catalog {
+    // display: none;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    z-index: 504;
+    position: fixed;
+    top: 130px;
+  }
+
+  .sub-menu-catalog__container {
+    display: block;
+    padding: 0;
+  }
+
+  .sub-menu-catalog__block {
+    opacity: 1;
+    background-color: var(--black);
+    position: fixed;
+    z-index: 502;
+    left: -100%;
+    height: 100%;
+    transition: ease-in-out 0.5s;
+  }
+
+  .sub-menu-catalog__block--active {
+    left: 0;
+  }
+
+  .sub-menu-catalog__title {
+    display: none;
+  }
+
+  .sub-menu-catalog__list {
+    margin: 0;
+    gap: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sub-menu-catalog__all {
+    display: none;
   }
 }
 

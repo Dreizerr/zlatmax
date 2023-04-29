@@ -1,6 +1,63 @@
 @import "base/nullstyle";
 @import "base/generals";
+@import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
 
 @import "components/header";
 
 @import "base/media";
+
+.intro {
+  color: white;
+  position: relative;
+  z-index: 19;
+  background: url(../images/intro/background.jpg) no-repeat center;
+  background-size: cover;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    height: 100%;
+    background: url(../images/intro/backgroundLayer.png) no-repeat center;
+    background-size: cover;
+  }
+}
+
+.intro__container {
+  padding-top: 36px;
+  position: relative;
+  z-index: 21;
+}
+
+.intro__title {
+  line-height: 1.27;
+}
+
+.intro__desc {
+  line-height: 150%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.intro__desc--color1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intro__desc--color2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.intro__header {
+  max-width: 915px;
+}
+
+.intro__button {
+  margin-top: 30px;
+}
+
+.intro__swiper {
+  max-width: 915px;
+  margin-left: 0;
+}

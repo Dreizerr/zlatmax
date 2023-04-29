@@ -5,6 +5,7 @@ body {
   @include adaptive-value("font-size", 18, 16, $type);
   font-weight: 500;
   font-family: $generalFont;
+  line-height: 1.5;
 }
 
 [class*="__container"] {
@@ -26,6 +27,7 @@ h2 {
 h3 {
   font-size: 24px;
   font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 h4 {
@@ -38,6 +40,33 @@ h5 {
   font-weight: 700;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.button {
+  background-color: var(--orange);
+  padding: 10px;
+  box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+  border-radius: 3px;
+  text-align: center;
+  max-width: 228px;
+  transition: ease 0.7s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #bd8d2c;
+    }
+  }
+}
+
 .main {
   margin-top: var(--headerHeight);
 }
@@ -48,4 +77,10 @@ h5 {
 
 .desktop-hidden {
   display: none !important;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }

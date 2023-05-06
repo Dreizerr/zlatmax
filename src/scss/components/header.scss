@@ -132,18 +132,15 @@
 .header-actions__phone {
   font-size: 18px;
   font-weight: 600;
-  height: 18px;
   display: flex;
   gap: 10px;
-
   transition: ease 0.7s;
   overflow: hidden;
-  &.active {
-    height: 39px;
-    .header-actions__spoiler-arrow {
-      transform: rotate(180deg) translate(0, -5px);
-    }
-  }
+  // &.active {
+  //   .header-actions__spoiler-arrow {
+  //     transform: rotate(180deg) translate(0, -5px);
+  //   }
+  // }
 }
 
 .header-actions__phone-link {

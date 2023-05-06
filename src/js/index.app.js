@@ -5,11 +5,13 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
 
 const introSwiper = new Swiper(".intro__swiper", {
   // autoHeight: true,
+  spaceBetween: 150,
+  // simulateTouch: false,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
-  speed: 1000,
+  speed: 1500,
   loop: true,
 });
 

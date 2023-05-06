@@ -72,4 +72,4 @@ function headerActions(e) {
     catalog.classList.add("header-top-menu__sub-menu--active");
   }
 }
-utils.setActiveToggler(phoneSpoiler, phoneOrder);
+// utils.setActiveToggler(phoneSpoiler, phoneOrder);

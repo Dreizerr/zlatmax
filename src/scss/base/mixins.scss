@@ -14,3 +14,4 @@
     #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px)) / #{$maxWidth - 320});
   }
 }
+

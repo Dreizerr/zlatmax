@@ -108,4 +108,26 @@ h5 {
     height: calc(100% + 10px);
     background: rgba(232, 170, 49, 0.5);
   }
+  &::after {
+    content: attr(data-tooltip-text);
+    bottom: calc(100% + 15px);
+    background-color: var(--black);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    transition: ease 0.7s;
+    font-size: 14px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::after {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
 }

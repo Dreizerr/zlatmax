@@ -1,0 +1,16 @@
+@import "../catalogCards";
+
+.catalog {
+}
+.catalog__container {
+  padding: 100px 15px;
+}
+.catalog__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 510px));
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+}

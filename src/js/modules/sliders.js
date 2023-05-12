@@ -42,3 +42,22 @@ if (document.querySelector(`.intro__swiper`)) {
     },
   });
 }
+
+if (document.querySelector(".product-slider__slider")) {
+  const productSwiper = new Swiper(".product-slider__slider", {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".product-slider__pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    speed: 2500,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+  });
+}

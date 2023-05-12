@@ -1,4 +1,3 @@
-
 .intro {
   color: white;
   position: relative;
@@ -51,6 +50,9 @@
 
 .intro__header {
   max-width: 915px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .intro__button {
@@ -139,51 +141,7 @@
   gap: 32px;
 }
 
-.intro__swiper-pagination {
-  position: static;
-  display: flex;
-  align-items: center;
-  flex: 0 0 0;
-
-  .swiper-pagination-bullet {
-    position: relative;
-    border-radius: 0%;
-    width: 18px;
-    height: 2px;
-    z-index: 5;
-    background-color: white;
-    opacity: 1;
-  }
-
-  .swiper-pagination-bullet-active {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-color: var(--orange);
-      z-index: 6;
-      animation: intro-bullet-active-before linear 9s;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: var(--orange);
-      top: 50%;
-      transform: translate(0px, -50%);
-      left: 0;
-      z-index: 7;
-      animation: intro-bullet-after linear 9s;
-    }
-  }
-}
-
-@keyframes intro-bullet-after {
+@keyframes bullet-after {
   0% {
     left: 0;
   }
@@ -192,7 +150,7 @@
   }
 }
 
-@keyframes intro-bullet-active-before {
+@keyframes bullet-active-before {
   0% {
     width: 0%;
   }
@@ -213,7 +171,6 @@
 .intro__swiper-frac-all {
   font-size: 18px;
 }
-
 
 @media (max-width: 1000px) {
   .intro__tooltip {

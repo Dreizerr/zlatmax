@@ -1,0 +1,23 @@
+@import "productCards.scss";
+
+.product-slider__slider {
+  overflow: hidden;
+}
+
+.product-slider__pagination {
+  padding: 5px;
+  justify-content: center;
+  margin-top: 60px;
+  .swiper-pagination-bullet {
+    background: rgba(137, 137, 137, 1);
+  }
+
+  .swiper-pagination-bullet-active {
+    &::before {
+      animation-duration: 10s;
+    }
+    &::after {
+      animation-duration: 10s;
+    }
+  }
+}

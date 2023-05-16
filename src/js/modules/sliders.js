@@ -47,6 +47,7 @@ if (document.querySelector(".product-slider__slider")) {
   const productSwiper = new Swiper(".product-slider__slider", {
     loop: true,
     spaceBetween: 20,
+    simulateTouch: false,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -59,5 +60,62 @@ if (document.querySelector(".product-slider__slider")) {
     speed: 2500,
     slidesPerView: 4,
     slidesPerGroup: 4,
+    breakpoints: {
+      350: {
+        slidesPerGroup: 1,
+        slidesPerView: 1,
+      },
+
+      700: {
+        slidesPerGroup: 2,
+        slidesPerView: 2,
+      },
+
+      1050: {
+        slidesPerGroup: 3,
+        slidesPerView: 3,
+      },
+
+      1350: {
+        slidesPerGroup: 4,
+        slidesPerView: 4,
+      },
+    },
+  });
+}
+
+if (document.querySelector(`.alternative-product-slider__slider`)) {
+  const alternativeProductSlider = new Swiper(".alternative-product-slider__slider", {
+    loop: true,
+    spaceBetween: 20,
+    simulateTouch: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".product-slider__pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    speed: 2500,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    breakpoints: {
+      350: {
+        slidesPerGroup: 1,
+        slidesPerView: 1,
+      },
+
+      700: {
+        slidesPerGroup: 2,
+        slidesPerView: 2,
+      },
+
+      1350: {
+        slidesPerGroup: 3,
+        slidesPerView: 3,
+      },
+    },
   });
 }

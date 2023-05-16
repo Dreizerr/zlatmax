@@ -88,12 +88,9 @@ h5 {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
-
-// .section-text-header {
-
-// }
 
 .section-more {
   display: inline-flex;

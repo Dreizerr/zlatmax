@@ -33,7 +33,7 @@
       top: 0;
       background-color: var(--orange);
       z-index: 6;
-      animation: bullet-active-before linear 9s;
+      animation: bullet-active-before linear 7s;
       padding: 0;
       transform: translate(0px, 0px);
     }
@@ -48,7 +48,25 @@
       transform: translate(0px, -50%);
       left: 0;
       z-index: 7;
-      animation: bullet-after linear 9s;
+      animation: bullet-after linear 7s;
     }
+  }
+}
+
+@keyframes bullet-after {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+@keyframes bullet-active-before {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }

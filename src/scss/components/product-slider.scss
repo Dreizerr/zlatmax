@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+.product-slider__container {
+  padding-bottom: 160px;
+}
+
 .product-slider__pagination {
   padding: 5px;
   justify-content: center;
@@ -20,4 +24,37 @@
       animation-duration: 10s;
     }
   }
+}
+
+.alternative-product-slider {
+  background: url(../images/forest.png) center / cover no-repeat;
+}
+
+.alternative-product-slider__container {
+  display: flex;
+  padding: 50px 15px;
+  align-items: start;
+  gap: 60px;
+}
+
+.alternative-product-slider__header {
+  flex: 0 0 330px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  color: white;
+}
+
+.alternative-product-slider__more {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--orange);
+
+  &:visited {
+    color: var(--orange);
+  }
+}
+
+.alternative-product-slider__slider {
+  overflow: hidden;
 }

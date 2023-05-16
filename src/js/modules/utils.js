@@ -25,3 +25,11 @@ export function findParent(element, cls) {
   while ((element = element.parentElement) && !element.classList.contains(cls));
   return element;
 }
+
+export function tagTextInTitleAttr() {
+  const items = document.querySelectorAll(`[title="@tag-text"]`);
+  items.forEach((item, index) => {
+    const text = item.textContent;
+    item.title = text ? text : "";
+  });
+}

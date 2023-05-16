@@ -2,7 +2,7 @@
   color: white;
   position: relative;
   z-index: 19;
-  background: url(../images/intro/background.png) center / cover no-repeat;
+  background: url(../images/forest.png) center / cover no-repeat;
   &::after {
     content: "";
     position: absolute;
@@ -139,24 +139,6 @@
   display: flex;
   align-items: center;
   gap: 32px;
-}
-
-@keyframes bullet-after {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-@keyframes bullet-active-before {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 .intro__swiper-frac {

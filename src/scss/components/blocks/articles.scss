@@ -1,0 +1,24 @@
+@import "../common/article";
+
+.articles {
+}
+
+.articles__header {
+}
+
+.article__title {
+}
+
+.articles__container {
+  padding: 60px 15px;
+}
+
+.articles__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 375px);
+  justify-content: center;
+  gap: 30px;
+}
+
+.articles__article {
+}

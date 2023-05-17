@@ -2,13 +2,15 @@
 @import "base/generals";
 @import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
 
-@import "components/tooltips";
-@import "components/sliders";
-@import "components/product-slider";
+@import "components/common/tooltips";
+@import "components/common/sliders";
 
 @import "components/blocks/header";
 @import "components/blocks/intro";
 @import "components/blocks/catalog";
+@import "components/blocks/product-slider";
 @import "components/blocks/bestsellers-slider";
+@import "components/blocks/articles";
+@import "components/blocks/others-cards";
 
 @import "base/media";

@@ -45,7 +45,6 @@ if (document.querySelector(`.intro__swiper`)) {
 
 if (document.querySelector(".product-slider__slider")) {
   const productSwiper = new Swiper(".product-slider__slider", {
-    loop: true,
     spaceBetween: 20,
     simulateTouch: false,
     autoplay: {
@@ -86,7 +85,6 @@ if (document.querySelector(".product-slider__slider")) {
 
 if (document.querySelector(`.alternative-product-slider__slider`)) {
   const alternativeProductSlider = new Swiper(".alternative-product-slider__slider", {
-    loop: true,
     spaceBetween: 20,
     simulateTouch: false,
     autoplay: {
@@ -107,7 +105,7 @@ if (document.querySelector(`.alternative-product-slider__slider`)) {
         slidesPerView: 1,
       },
 
-      700: {
+      1100: {
         slidesPerGroup: 2,
         slidesPerView: 2,
       },

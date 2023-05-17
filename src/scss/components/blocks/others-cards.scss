@@ -1,0 +1,8 @@
+@import "../common/others-catalog-cards";
+
+.others-cards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  padding: 60px 15px;
+  gap: 50px;
+}

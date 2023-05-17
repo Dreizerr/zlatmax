@@ -1,4 +1,4 @@
-@import "productCards.scss";
+@import "../common/product-card.scss";
 
 .product-slider__slider {
   overflow: hidden;
@@ -57,4 +57,15 @@
 
 .alternative-product-slider__slider {
   overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .alternative-product-slider__container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .alternative-product-slider__header {
+    flex: 1 1 auto;
+  }
 }

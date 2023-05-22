@@ -33,3 +33,19 @@ export function tagTextInTitleAttr() {
     item.title = text ? text : "";
   });
 }
+
+export function isMailValid(email) {
+  const regexp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regexp.test(email);
+}
+
+export const isFormChecked = (...checks) => {
+  const result = checks.filter((check) => {
+    return !check.checked;
+  });
+  if (result[0]) {
+    return false;
+  } else {
+    return true;
+  }
+};

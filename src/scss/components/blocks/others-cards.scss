@@ -6,3 +6,9 @@
   padding: 60px 15px;
   gap: 50px;
 }
+
+@media (max-width: 790px) {
+  .others-cards__container {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
+  }
+}

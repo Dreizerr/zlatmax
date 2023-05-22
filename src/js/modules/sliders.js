@@ -60,7 +60,7 @@ if (document.querySelector(".product-slider__slider")) {
     slidesPerView: 4,
     slidesPerGroup: 4,
     breakpoints: {
-      350: {
+      320: {
         slidesPerGroup: 1,
         slidesPerView: 1,
       },
@@ -100,7 +100,7 @@ if (document.querySelector(`.alternative-product-slider__slider`)) {
     slidesPerView: 3,
     slidesPerGroup: 3,
     breakpoints: {
-      350: {
+      320: {
         slidesPerGroup: 1,
         slidesPerView: 1,
       },

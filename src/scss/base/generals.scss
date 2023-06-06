@@ -81,6 +81,18 @@ h5 {
   }
 }
 
+.button--transparent {
+  background-color: transparent;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--orange);
+      color: white;
+    }
+  }
+}
+
 .main {
   margin-top: var(--headerHeight);
 }

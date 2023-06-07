@@ -75,11 +75,18 @@
       display: none;
     }
   }
-  .filter-controlls-item__header {
-    background-color: black;
-    padding: 13px 30px;
-    color: white;
-  }
+}
+
+.filter-controlls-item__header {
+  background-color: black;
+  padding: 13px 30px;
+  color: white;
+}
+
+.filter-controlls-header__header {
+  background-color: white;
+  padding: 0;
+  color: black;
 }
 
 .filter-controlls-item__spoiler-header {

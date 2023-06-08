@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include("html/head.html", { title: "Catalog", page: "catalog" })
-
+  @@include("html/head.html", {title: "Catalog", page: "catalog"})
   <body class="page-catalog">
     <div class="wrapper">
       @@include("html/header.html", {})
@@ -19,12 +18,15 @@
             </header>
             <div class="filter__body">
               <div class="filter-controlls">
-                <header class="filter-controlls-item filter-controlls-header">
+                <header class="filter-controlls-item">
                   <header class="filter-controlls-item__header">Фильтр товаров</header>
                   <div class="filter-controlls-item__body">
                     <div class="filter-controlls-item">
-                      <div class="filter-controlls-item__header filter-controlls-header__header">Цена</div>
-                      <div class="filter-controlls-item__body"></div>
+                      <div
+                        class="filter-controlls-item__header filter-controlls-header__header filter-controlls-item__spoiler-header">
+                        Цена
+                      </div>
+                      <div class="filter-controlls-item__body filter-controlls-item__spoiler-body"></div>
                     </div>
                   </div>
                 </header>
@@ -32,7 +34,7 @@
                   <header class="filter-controlls-item__header filter-controlls-item__spoiler-header">
                     Производство
                   </header>
-                  <div class="filter-controlls-item__body filter-controlls-item__spoiler-body">filter body</div>
+                  <div class="filter-controlls-item__body filter-controlls-item__spoiler-body"></div>
                 </div>
               </div>
               <div class="filter-grid">
@@ -211,6 +213,26 @@
       </main>
       @@include("html/footer.html", {})
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"
+      integrity="sha512-UOJe4paV6hYWBnS0c9GnIRH8PLm2nFK22uhfAvsTIqd3uwnWsVri1OPn5fJYdLtGY3wB11LGHJ4yPU1WFJeBYQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
     <script src="js/catalog.app.min.js" type="module"></script>
   </body>
 </html>
+
+<!-- <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/catalog.styles.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css"
+    integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <title>Catalog</title>
+</head> -->

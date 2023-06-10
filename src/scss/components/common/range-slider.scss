@@ -1,0 +1,71 @@
+.range-slider {
+}
+.range-slider__inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(203, 203, 203, 1);
+  border-radius: 2px;
+}
+
+.range-slider__input {
+  width: 100%;
+  font-weight: 500;
+  padding: 12px 38px;
+  font-size: 16px;
+  text-align: center;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+  &:not(:last-child) {
+    border-right: 1px solid rgba(203, 203, 203, 1);
+  }
+  &:disabled {
+    color: black;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 25px;
+  height: 25px;
+  background: #141414;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  border: 5px solid #e8aa31;
+  top: 50%;
+  transform: translate(0, -40%);
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+.noUi-horizontal {
+  height: 5px;
+  border-radius: 0;
+  border: none;
+}
+
+.noUi-connect {
+  background-color: black;
+}
+
+.noUi-target {
+  background-color: var(--orange);
+}
+
+.noUi-horizontal .noUi-tooltip {
+  border: none;
+  background-color: transparent;
+  bottom: 0;
+  top: 100%;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(20, 20, 20, 0.7);
+}

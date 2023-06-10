@@ -2,6 +2,7 @@ import * as utils from "./modules/utils.js";
 import * as header from "./modules/header.js";
 import * as footer from "./modules/footer.js";
 import * as sliders from "./modules/sliders.js";
+import * as rangeSliders from "./modules/rangeSliders.js";
 
 utils.isWebp();
 utils.tagTextInTitleAttr();
@@ -13,3 +14,5 @@ controlls.addEventListener("click", (e) => {
     e.target.closest(".filter-controlls-item ").classList.toggle("closed");
   }
 });
+
+

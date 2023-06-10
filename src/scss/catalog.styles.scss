@@ -6,6 +6,7 @@
 
 @import "components/common/sliders";
 @import "components/common/product-card";
+@import "components/common/range-slider";
 
 @import "components/blocks/header";
 @import "components/blocks/footer";
@@ -86,16 +87,6 @@
   font-size: 20px;
 }
 
-.filter-controlls-header {
-}
-
-.filter-controlls-header__header {
-  background-color: white;
-  padding: 0;
-  color: black;
-  font-weight: 700;
-}
-
 .filter-controlls-item__spoiler-header {
   display: flex;
   justify-content: space-between;
@@ -118,6 +109,22 @@
 
 .filter-controlls-item__spoiler-body {
   transition: ease 0.7s;
+}
+
+.filter-controlls-item__inputs {
+}
+
+.filter-price__header {
+  background-color: white;
+  padding: 0;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.filter-price__body {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .filter-grid {

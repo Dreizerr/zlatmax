@@ -1,0 +1,32 @@
+.catalog-nav {
+}
+.catalog-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+  overflow: auto;
+}
+.catalog-nav__item {
+}
+.catalog-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.5;
+  &::after {
+    content: "";
+    background: url(../images/icons/arrow-black.svg) center / cover no-repeat;
+    width: 7px;
+    height: 11px;
+    display: block;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.catalog-nav__current {
+  color: var(--orange);
+}

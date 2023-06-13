@@ -158,14 +158,13 @@
 .footer-form__label {
   margin-left: 35px;
   cursor: pointer;
+  align-items: start;
 }
 
 .footer-form__checkbox {
   position: absolute;
   appearance: none;
   &:checked + .footer-form__custom-checkbox {
-    background: url(../images/icons/flag.png) center / cover no-repeat;
-    background-color: white;
   }
 }
 

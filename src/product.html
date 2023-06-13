@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("html/head.html", {title: "Нож Снегирь", page: "product"})
+  <body class="page-product">
+    @@include("html/header.html", {})
+    <main class="main">
+      <div class="product">
+        <div class="product__container">
+          <nav class="catalog-nav">
+            <ul class="catalog-nav__list">
+              <li class="catalog-nav__item"><a class="catalog-nav__link" href="index.html">Главная</a></li>
+              <li class="catalog-nav__item"><a class="catalog-nav__link" href="index.html">Разделочные ножи</a></li>
+              <li class="catalog-nav__item"><span class="catalog-nav__current">Нож Снегирь</span></li>
+            </ul>
+          </nav>
+          <div class="product-blocks">
+            <div class="product-block-images">1</div>
+            <div class="product-block-info">
+              <header class="product-header">
+                <h3 class="product__title">Нож Снегирь</h3>
+                <a class="product__rating" href="">
+                  <img class="product__rating-star" src="images/icons/star.svg" alt="" />
+                  <img class="product__rating-star" src="images/icons/star.svg" alt="" />
+                  <img class="product__rating-star" src="images/icons/star.svg" alt="" />
+                  <img class="product__rating-star" src="images/icons/star.svg" alt="" />
+                  <img class="product__rating-star" src="images/icons/star.svg" alt="" />
+                </a>
+                <div class="product-actions">
+                  <button class="product-actions__like">
+                    <img class="" src="images/icons/heart-yellow.svg" alt="" />
+                  </button>
+                  <button class="product-actions__scale">
+                    <img class="" src="images/icons/scales.svg" alt="" />
+                  </button>
+                </div>
+                <div class="product-state">
+                  <span class="product-state__text product-state__text--color-green">В наличии</span>
+                </div>
+              </header>
+              <hr class="hr-grey" />
+              <div class="product-info">
+                <div class="product-info__title">Артикул:</div>
+                <div class="product-info__text">AF0000001952</div>
+                <div class="product-info__title">Торговая марка:</div>
+                <div class="product-info__text">WUESTHOF (Германия)</div>
+                <div class="product-info__title">Серия:</div>
+                <div class="product-info__text">Ножи серии Classic Ikon</div>
+                <div class="product-info__title">Бонусные баллы:</div>
+                <div class="product-info__text">38</div>
+              </div>
+              <hr class="hr-grey" />
+              <div class="product-options">
+                <div class="product-options__title">Сталь</div>
+                <div class="product-options__select"></div>
+                <div class="product-options__title">Рукоять</div>
+                <div class="product-options__select"></div>
+                <div class="product-options__title">Гарда и тыльник</div>
+                <div class="product-options__select"></div>
+                <div class="product-options__title">Обработка клинка</div>
+                <div class="product-options__select"></div>
+              </div>
+              <hr class="hr-grey" />
+              <footer class="product-footer">
+                <div class="product-price">
+                  <span class="product-price__number">3 865</span>
+                  <img class="product-price__ruble" src="images/icons/ruble.svg" alt="ruble" />
+                </div>
+                <div class="product-points">
+                  <div class="product-points__text">+ 449 баллов за покупку</div>
+                  <div class="tooltip-wrapper">
+                    <div class="tooltip-question">?</div>
+                    <div class="tooltip-question-body">
+                      Вам будут начислены баллы в размере 5% от стоимости покупки. Их можно будет использовать на оплату
+                      последующих заказов.
+                    </div>
+                  </div>
+                </div>
+                <div class="product-amount">
+                  <button class="product-amount__button product-amount__minus">-</button>
+                  <div class="product-amount__number">1</div>
+                  <button class="product-amount__button product-amount__plus">+</button>
+                </div>
+                <div class="product-footer__buttons">
+                  <button class="button">В корзину <img src="images/icons/cart-bold.svg" alt="" /></button>
+                  <button class="button button--black">Купить в 1 клик</button>
+                </div>
+              </footer>
+            </div>
+            <div class="product-block-tabs">3</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include("html/footer.html", {})
+    <script src="js/product.app.min.js" type="module"></script>
+  </body>
+</html>

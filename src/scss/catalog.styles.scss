@@ -4,9 +4,11 @@
 @import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css";
 
+@import "components/common/catalog-nav";
 @import "components/common/sliders";
 @import "components/common/product-card";
 @import "components/common/range-slider";
+@import "components/common/checkboxes";
 
 @import "components/blocks/header";
 @import "components/blocks/footer";
@@ -23,38 +25,6 @@
   margin-bottom: 30px;
 }
 .filter__title {
-}
-.filter-nav {
-}
-.filter-nav__list {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  white-space: nowrap;
-  overflow: auto;
-}
-.filter-nav__item {
-}
-.filter-nav__link {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  opacity: 0.5;
-  &::after {
-    content: "";
-    background: url(../images/icons/arrow-black.svg) center / cover no-repeat;
-    width: 7px;
-    height: 11px;
-    display: block;
-  }
-  @media (any-hover: hover) {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-.filter-nav__current {
-  color: var(--orange);
 }
 
 .filter__body {
@@ -111,7 +81,10 @@
   transition: ease 0.7s;
 }
 
-.filter-controlls-item__inputs {
+.filter-controlls__checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .filter-price__header {
@@ -124,7 +97,6 @@
 
 .filter-price__body {
   padding: 0;
-  margin-bottom: 30px;
 }
 
 .filter-grid {

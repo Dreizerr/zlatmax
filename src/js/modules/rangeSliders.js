@@ -1,3 +1,5 @@
+import * as nouislider from "../modules/nouislider.min.js";
+
 const rangeSliders = document.querySelectorAll(`.range-slider`);
 
 if (rangeSliders.length) {

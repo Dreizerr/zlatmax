@@ -14,7 +14,9 @@
             </ul>
           </nav>
           <div class="product-blocks">
-            <div class="product-block-images">1</div>
+            <div class="product-block-images">
+              <div class="product-slider"></div>
+            </div>
             <div class="product-block-info">
               <header class="product-header">
                 <h3 class="product__title">Нож Снегирь</h3>
@@ -51,13 +53,33 @@
               <hr class="hr-grey" />
               <div class="product-options">
                 <div class="product-options__title">Сталь</div>
-                <div class="product-options__select"></div>
+                <select class="product-options__select" name="" id="">
+                  <option placeholder>Выбрать сталь</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                </select>
                 <div class="product-options__title">Рукоять</div>
-                <div class="product-options__select"></div>
+                <select class="product-options__select" name="" id="">
+                  <option placeholder>Выбрать рукоять</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                </select>
                 <div class="product-options__title">Гарда и тыльник</div>
-                <div class="product-options__select"></div>
+                <select class="product-options__select" name="" id="">
+                  <option placeholder>Выбрать гарда и тыльник</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                </select>
                 <div class="product-options__title">Обработка клинка</div>
-                <div class="product-options__select"></div>
+                <select class="product-options__select" name="" id="">
+                  <option placeholder>Выбрать обработку клинка</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                </select>
               </div>
               <hr class="hr-grey" />
               <footer class="product-footer">
@@ -68,8 +90,8 @@
                 <div class="product-points">
                   <div class="product-points__text">+ 449 баллов за покупку</div>
                   <div class="tooltip-wrapper">
-                    <div class="tooltip-question">?</div>
-                    <div class="tooltip-question-body">
+                    <div class="tooltip-question tooltip">?</div>
+                    <div class="tooltip-question-body tooltip-body">
                       Вам будут начислены баллы в размере 5% от стоимости покупки. Их можно будет использовать на оплату
                       последующих заказов.
                     </div>
@@ -92,6 +114,7 @@
       </div>
     </main>
     @@include("html/footer.html", {})
+    <!-- <script src="js/modules/choices.min.js"></script> -->
     <script src="js/product.app.min.js" type="module"></script>
   </body>
 </html>

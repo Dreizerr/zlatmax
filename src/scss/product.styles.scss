@@ -6,6 +6,7 @@
 @import "components/common/catalog-nav";
 @import "components/common/sliders";
 @import "components/common/tooltips";
+@import "components/common/choices.min";
 
 @import "components/blocks/header";
 @import "components/blocks/footer";
@@ -89,6 +90,39 @@
   align-items: center;
   gap: 35px;
   row-gap: 20px;
+
+  .choices {
+    margin: 0;
+  }
+
+  .choices__inner {
+  }
+
+  .choices__list {
+  }
+
+  .choices[data-type*="select-one"]::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    border: none;
+    width: 45px;
+    height: 100%;
+    background: url(../images/icons/arrow.svg) center no-repeat;
+    background-color: black;
+    transform: translate(0, -50%);
+    right: 0;
+  }
+
+  .choices[data-type*="select-one"].is-open::after {
+    transform: translate(0px, -50%) rotate(180deg);
+  }
+
+  // .choices__inner {
+  //   padding-right: 0;
+  // }
 }
 .product-options__title {
 }

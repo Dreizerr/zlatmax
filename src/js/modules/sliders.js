@@ -117,3 +117,28 @@ if (document.querySelector(`.alternative-product-slider__slider`)) {
     },
   });
 }
+
+if (document.querySelector(`.product-images-slider`)) {
+  const productImagesSlider = new Swiper(`.product-images-slider`, {
+    loop: true,
+    simulateTouch: false,
+    spaceBetween: 5,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 1500,
+
+    thumbs: {
+      swiper: {
+        el: `.product-images-thumbs`,
+        spaceBetween: 15,
+        slidesPerView: 4,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      },
+    },
+  });
+}

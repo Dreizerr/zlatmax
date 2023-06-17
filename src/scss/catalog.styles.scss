@@ -111,6 +111,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  row-gap: 25px;
   grid-column: 2/2;
 }
 .filter-more__button {
@@ -163,3 +164,28 @@
 }
 
 @import "base/media";
+
+@media (max-width: 1220px) {
+  .filter__body {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-more {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-more {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .filter-more__button {
+    max-width: 100%;
+  }
+}

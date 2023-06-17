@@ -1,0 +1,1 @@
+import*as utils from"../modules/utils.js";import{setActiveToggler}from"./utils.js";const allTipWrappers=document.querySelectorAll(".tooltip-wrapper");allTipWrappers.forEach(r=>{var e=r.querySelector(".tooltip"),r=r.querySelector(".tooltip-body");setActiveToggler(e,r)});export{allTipWrappers};

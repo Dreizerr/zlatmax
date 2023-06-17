@@ -1,0 +1,1 @@
+import*as choices from"../modules/choices.min.js";if(document.querySelector(".product-options__select")){const a=document.querySelectorAll(".product-options__select");a.forEach(e=>{new Choices(e,{placeholder:!0,searchEnabled:!1,allowHTML:!1,itemSelectText:""})})}

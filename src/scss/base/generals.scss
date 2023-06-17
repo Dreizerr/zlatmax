@@ -84,6 +84,7 @@ h5 {
   transition: ease 0.7s;
   color: white;
   font-weight: 600;
+  white-space: nowrap;
   @media (any-hover: hover) {
     &:hover {
       background-color: #fcc24e;

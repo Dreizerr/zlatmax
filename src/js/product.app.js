@@ -4,6 +4,7 @@ import * as footer from "./modules/footer.js";
 import * as sliders from "./modules/sliders.js";
 import * as tooltips from "./modules/tooltips.js";
 import * as selects from "./modules/selects.js";
+import * as tabs from "./modules/tabs.js";
 
 utils.isWebp();
 utils.tagTextInTitleAttr();

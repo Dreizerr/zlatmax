@@ -1,0 +1,18 @@
+.tabs {
+}
+
+.tabs__block-links {
+}
+
+.tabs__link {
+}
+
+.tabs__block-body {
+}
+
+.tabs__body {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

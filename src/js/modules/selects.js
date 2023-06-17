@@ -7,6 +7,7 @@ if (document.querySelector(`.product-options__select`)) {
       placeholder: true,
       searchEnabled: false,
       allowHTML: false,
+      itemSelectText: "",
     });
   });
 }
